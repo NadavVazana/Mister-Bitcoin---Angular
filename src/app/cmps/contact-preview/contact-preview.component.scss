@@ -1,0 +1,30 @@
+.contact{
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: lightblue;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover{
+        background-color: rgb(130, 191, 211);
+        transition: all 0.4s;
+    }
+    .contact-img{
+        width: 100px;
+    }
+
+    .dlt-btn{
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: none;
+        padding: 10px;
+        &:hover{
+            background-color: lightcoral;
+        }
+    }
+}

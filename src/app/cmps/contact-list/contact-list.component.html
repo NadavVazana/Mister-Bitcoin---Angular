@@ -1,0 +1,7 @@
+<section class="contact-list">
+    <input (input)="filter()"  [(ngModel)]="filterBy.term" type="text" placeholder="search for contacts:">
+    <button [routerLink]="['/contact/add']">Add Contact</button>
+    <ul>
+        <li *ngFor="let contact of contacts "><app-contact-preview [contact]="contact"></app-contact-preview></li>
+    </ul>
+</section>

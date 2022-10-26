@@ -1,0 +1,12 @@
+<section class="add-contact">
+    <form (ngSubmit)="addContact()" >
+    <input name="name" [(ngModel)]="contact.name" required type="text" placeholder="Name:">
+    <input name="phone" [(ngModel)]="contact.phone" required type="text" placeholder="Phone:">
+    <input name="email" [(ngModel)]="contact.email" required type="email" placeholder="Email:">
+    
+        <button>Add!</button>
+</form>
+
+<button class="go-back-btn" [routerLink]="['/contacts']">Go back</button>
+
+</section>

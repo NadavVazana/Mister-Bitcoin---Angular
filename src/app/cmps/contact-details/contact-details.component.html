@@ -1,0 +1,15 @@
+<section class="contact-details">
+    <h1>Name: {{contact.name}}</h1>
+    <h2>Email: {{contact.email}}</h2>
+    <h2>Phone: {{contact.phone}}</h2>
+    <button [routerLink]="['/edit',contact._id]">Edit</button>
+
+    <img class="contact-img" [src]="getUserImage(contact._id)">
+    <button [routerLink]="['/contacts']">Go back</button>
+
+    <h1>Transfer coins to this contact!</h1>
+    <div class="trans">
+    <input [(ngModel)]="transferAmount" type="number" placeholder="Transfer:">
+    <h1>{{transferAmount}}</h1>
+    <button class="trans-btns" (click)="transfer()">Transfer!</button></div>
+</section>

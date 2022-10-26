@@ -1,0 +1,11 @@
+<section class="app-header">
+    <div [routerLink]="['']" class="left-header">
+        <img  src="../../../assets//imgs/logo.svg" alt="">
+        <h1>Mister Bitcoin.</h1>
+    </div>
+    <nav>
+        <a [routerLink]="['/contacts']" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Contacts</a>
+        <a [routerLink]="['/login']">Login</a>
+        <button *ngIf="user" (click)="signOut()">Sign out</button>
+    </nav>
+</section>

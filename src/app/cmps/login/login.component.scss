@@ -1,0 +1,24 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    h1{
+        font-size: 2rem;
+
+    }
+
+    input{
+        padding: 5px;
+    }
+    button{
+        &:hover{
+            background-color: lightblue;
+
+        }
+        border: none;
+        padding: 10px;
+    }
+}

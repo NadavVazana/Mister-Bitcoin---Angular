@@ -1,0 +1,7 @@
+<section [routerLink]="['/contacts',contact._id]" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="contact">
+    <h2 class="contact-name">{{contact.name}}</h2>
+    <h3 class="contact-email">{{contact.email}}</h3>
+    <h3 class="contact-phone">{{contact.phone}}</h3>
+    <img class="contact-img" [src]="getUserImage(contact._id)">
+    <button (click)="removeContact()" class="dlt-btn">X</button>
+</section>

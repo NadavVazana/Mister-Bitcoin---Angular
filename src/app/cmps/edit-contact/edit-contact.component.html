@@ -1,0 +1,8 @@
+<section class="edit-contact">
+    <form (ngSubmit)="editContact()">
+        <input type="text" [(ngModel)]="contact.name" name="name">
+        <input type="text" [(ngModel)]="contact.phone" name="phone">
+        <input type="text" [(ngModel)]="contact.email" name="email">
+        <button>Submit Changes!</button>
+    </form>
+</section>

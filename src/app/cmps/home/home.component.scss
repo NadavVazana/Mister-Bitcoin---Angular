@@ -1,0 +1,27 @@
+.home-page{
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h2{
+        text-align: center;
+        color: rgb(161, 140, 16);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .transfers{
+        list-style-type: none;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+
+
+        li{
+            padding: 10px;
+            background-color: lightblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+        }
+    }
+}
